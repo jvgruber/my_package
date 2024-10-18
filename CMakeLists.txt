@@ -23,12 +23,8 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch 
+install(DIRECTORY description launch worlds
   DESTINATION share/${PROJECT_NAME}
-)
-
-install(DIRECTORY description
-  DESTINATION share/${PROJECT_NAME}/description
 )
 
 ament_package()
